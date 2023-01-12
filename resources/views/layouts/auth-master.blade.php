@@ -33,9 +33,9 @@
     <link href="signin.css" rel="stylesheet">
 </head>
 <body class="text-center">
-    
-    <main class="form-signin">
 
+    <main class="form-signin">
+    @include('layouts.partials.messages')
         @yield('content')
         
     </main>

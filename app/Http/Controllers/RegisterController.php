@@ -33,7 +33,7 @@ class RegisterController extends Controller
                 $request->merge(['referral_id' => $referalData->id]);
                 $this->referralPointUpdation($referalData->id); 
             }else{
-                return redirect('/')->with('error', "Invalid referral code");
+                return redirect()->back()->with('error', "Invalid referral code");
             }
         }
        
