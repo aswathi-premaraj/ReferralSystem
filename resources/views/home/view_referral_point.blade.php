@@ -16,6 +16,7 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        @if(count($referalList)>0)
                                         @foreach ($referalList as $list)
                                             <tr>
                                                 <td>{{ $loop->iteration }}</td>
@@ -30,6 +31,9 @@
                                                 
                                             </tr>
                                         @endforeach
+                                        @else
+                                        <tr><td></td><td>No referrals found</td><td></td></tr>
+                                        @endif
                                     </tbody>
                                 </table>
                                
