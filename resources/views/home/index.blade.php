@@ -4,7 +4,10 @@
     <div class="bg-light p-5 rounded">
         @auth
         <h1>Dashboard</h1>
-        <p class="lead">Only authenticated users can access this section.</p>
+        <p class="lead">Welcome {{Auth::user()->username}}.</p>
+        @if(Auth::user()->role_id==1)
+        <p> Please <a href="{{route('list.referrals.points')}}"> Click Here </a>to view referrals and their points</p>
+        @endif
         
         @endauth
 

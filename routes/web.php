@@ -18,7 +18,7 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
     /**
      * Home Routes
      */
-    Route::get('/', 'HomeController@index')->name('home.index');
+    
     Route::post('/register', 'RegisterController@register')->name('register.perform');
 
     Route::group(['middleware' => ['guest']], function() {
@@ -40,6 +40,7 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
         /**
          * Logout Routes
          */
+        Route::get('/', 'HomeController@index')->name('home.index');
         Route::get('/referral-point-list', 'HomeController@listUsersReferralPoints')->name('list.referrals.points');
         Route::get('/logout', 'LogoutController@perform')->name('logout.perform');
     });

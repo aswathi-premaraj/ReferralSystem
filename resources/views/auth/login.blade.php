@@ -27,7 +27,7 @@
         </div>
 
         <button class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
-        
+        <a href="{{route('register.show')}}">sign up</a>
         @include('auth.partials.copy')
     </form>
 @endsection
