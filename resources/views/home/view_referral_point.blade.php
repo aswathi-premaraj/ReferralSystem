@@ -3,7 +3,7 @@
 @section('content')
     <div class="bg-light p-5 rounded">
         @auth
-        <h1>Referral Points</h1>
+        <h1>Referrals And Their Points</h1>
         <div class="ms-panel-body">
                             <div class="table-responsive">
                                 <table class="table table-hover thead-primary table w-100" id="DataTable">

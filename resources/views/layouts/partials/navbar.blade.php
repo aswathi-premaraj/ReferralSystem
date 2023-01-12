@@ -6,9 +6,9 @@
       </a>
 
       <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+        <li><a href="{{route('home.index')}}" class="nav-link px-2 text-secondary">Home</a></li>
         @if(auth()->user()->role_id==1)
-        <li><a href="{{route('list.referrals.points')}}" class="nav-link px-2 text-white">Referral Points</a></li>
+        <li><a href="{{route('list.referrals.points')}}" class="nav-link px-2 text-white">Referral List</a></li>
         @endif
       </ul>
 
